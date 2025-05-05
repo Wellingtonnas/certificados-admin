@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Administrativo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Menu lateral -->
+    <aside class="sidebar">
+      <h2 class="logo">LOGO</h2>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="alunos.html">Alunos</a></li>
+          <li><a href="certificados.html">Certificados</a></li>
+          <li><a href="#">Administradores</a></li>
+        </ul>
+      </nav>
+      <div class="metricas">
+        <h3>Métricas</h3>
+        <p>Total de Cursos: <span id="total-cursos">0</span></p>
+        <p>Cert. Emitidos: <span id="total-certificados">0</span></p>
+        <p>Alunos Cadastrados: <span id="total-alunos">0</span></p>
+      </div>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+      <header class="topbar">
+        <span id="nome-usuario">Usuário</span>
+        <button onclick="logout()">Sair</button>
+      </header>
+
+      <section class="dashboard">
+        <h1>Dashboard Administrativo</h1>
+        <h3>Certificados Recentes</h3>
+        <table class="tabela">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Aluno</th>
+              <th>Curso</th>
+              <th>Data</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="lista-certificados">
+            <!-- Dados serão inseridos via JS -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

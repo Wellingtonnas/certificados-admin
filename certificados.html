@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Emitir Certificados</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2 class="logo">LOGO</h2>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="alunos.html">Alunos</a></li>
+          <li><a href="certificados.html" class="active">Certificados</a></li>
+          <li><a href="#">Administradores</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <span id="nome-usuario">Usuário</span>
+        <button onclick="logout()">Sair</button>
+      </header>
+
+      <section class="dashboard">
+        <h1>Emitir Certificado</h1>
+
+        <form id="certificado-form" class="form">
+          <select id="aluno-select" required></select>
+          <select id="curso-select" required></select>
+          <button type="submit">Emitir Certificado</button>
+        </form>
+
+        <h3>Certificados Emitidos</h3>
+        <table class="tabela">
+          <thead>
+            <tr>
+              <th>Aluno</th>
+              <th>Curso</th>
+              <th>Data</th>
+              <th>Código</th>
+              <th>PDF</th>
+            </tr>
+          </thead>
+          <tbody id="lista-certificados"></tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+  <script src="js/certificados.js"></script>
+</body>
+</html>
