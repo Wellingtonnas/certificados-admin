@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Login - Certificados</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login - 404 Cursos</title>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    
 </head>
-<body class="login-page">
-  <div class="login-container">
-    <h2>Login / Registro</h2>
-    <form id="login-form">
-      <input type="email" id="email" placeholder="Email" required>
-      <input type="password" id="senha" placeholder="Senha" required>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./CURSOS.png');
+    background-size: 30%;
+  }
+  </style>
+  </head>
+  <body class="login-page">
+    <div class="login-container">
+      <h2>Login / 404 Cursos</h2>
+      <form id="login-form">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="senha" placeholder="Senha" required />
 
-      <label><input type="checkbox" id="lembrar"> Lembrar-me</label>
+        <label><input type="checkbox" id="lembrar" /> Lembrar-me</label>
 
-      <div class="buttons">
-        <button type="submit">Entrar</button>
-        <button type="button" onclick="registrar()">Registrar</button>
-      </div>
+        <div class="buttons">
+          <button type="submit">Entrar</button>
+          <button type="button" onclick="registrar()">Registrar</button>
+        </div>
 
-      <p><a href="#">Esqueci minha senha</a></p>
-    </form>
-  </div>
+        <p><a href="#">Esqueci minha senha</a></p>
+      </form>
+    </div>
 
-  <script src="js/auth.js"></script>
-</body>
+    <script src="js/auth.js"></script>
+  </body>
 </html>
