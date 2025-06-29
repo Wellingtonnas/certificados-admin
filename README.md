@@ -124,9 +124,7 @@ A página `validacao.html` permite que qualquer pessoa insira um código e veja 
 
 ## 👥 Equipe
 
-- José Ricardo (Análise de Requisitos, Modelagem de Dados)
-- Nathália Leite (Front-end, UI Design)
-- Wellington Nascimento (Front-end, Integração e Testes)
+- Wellington Nascimento 
 
 ---
 
